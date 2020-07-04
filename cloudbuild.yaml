@@ -2,6 +2,6 @@ steps:
 - name: 'docker/compose:latest'
   args: ['up', '-d']
 images: 
-- 'gcr.io/$PROJECT_ID/dss-posgress:latest'
+- 'gcr.io/$PROJECT_ID/dss-postgres:latest'
 - 'gcr.io/$PROJECT_ID/dss-notebook:latest'
 timeout: 900s
