@@ -1,0 +1,8 @@
+steps:
+# postgresサーバを起動
+- name: 'gcr.io/subtle-analyzer-196607/docker-compose'
+  args: ['-f', 'docker-compose.yml', 'up', '-d', 'db']
+# notebookサーバを起動
+- name: 'gcr.io/subtle-analyzer-196607/docker-compose'
+  args: ['-f', 'docker-compose.yml', 'up', '-d', 'notebook']
+timeout: 900s
