@@ -1,7 +1,7 @@
 steps:
 - name: 'docker/compose:latest'
-  args: ['up', '-d', '--build']
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['tag', '100knocks-preprocess:latest', 'gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA']
-images: ['gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA']
+  args: ['up', '-d']
+images: 
+- 'gcr.io/$PROJECT_ID/dss-posgress:latest'
+- 'gcr.io/$PROJECT_ID/dss-notebook:latest'
 timeout: 900s

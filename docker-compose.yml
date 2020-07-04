@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.postgres
-    image: dss-postgres
+    image: dss-postgres:latest
     container_name: dss-postgres
     ports:
       - "5432:5432"
@@ -23,7 +23,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.notebook
-    image: dss-notebook
+    image: dss-notebook:latest
     container_name: dss-notebook
     ports:
       - "8888:8888"
