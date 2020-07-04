@@ -1,4 +1,4 @@
-FROM jupyter/datascience-notebook
+FROM jupyter/datascience-notebook:latest
 USER root
 ENV DEBCONF_NOWARNINGS yes
 RUN apt-get update
