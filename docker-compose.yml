@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.postgres
-    image: 'gcr.io/$PROJECT_ID/dss-postgres:latest'
+    image: 'gcr.io/subtle-analyzer-196607/dss-postgres:latest'
     container_name: dss-postgres
     ports:
       - "5432:5432"
@@ -23,7 +23,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.notebook
-    image: 'gcr.io/$PROJECT_ID/dss-notebook:latest'
+    image: 'gcr.io/subtle-analyzer-196607/dss-notebook:latest'
     container_name: dss-notebook
     ports:
       - "8888:8888"
